@@ -1,0 +1,241 @@
+/* Font loaded via <link> in index.html — Inter as SF Pro substitute */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────────────────────
+   Apple Design System — Global CSS
+   Reference: DESIGN.md (getdesign apple)
+───────────────────────────────────────────────────────────────*/
+
+/* ── Base reset ────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'ss03' on; /* Round 'a' — closest to SF Pro */
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #ffffff;
+  color: #1d1d1f;
+  /* No global dark-mode override — tiles control their own canvas */
+}
+
+/* ── Selection ─────────────────────────────────────────────── */
+::selection {
+  background: rgba(0, 102, 204, 0.15);
+  color: #0066cc;
+}
+
+/* ── Scrollbar (minimal) ───────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f5f5f7; }
+::-webkit-scrollbar-thumb { background: #c7c7cc; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #0066cc; }
+
+/* ─────────────────────────────────────────────────────────────
+   Apple Typography Utilities (DESIGN.md)
+───────────────────────────────────────────────────────────────*/
+
+.t-hero {
+  font-size: clamp(34px, 5vw, 56px);
+  font-weight: 600;
+  line-height: 1.07;
+  letter-spacing: -0.01em;
+}
+
+.t-display-lg {
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 600;
+  line-height: 1.10;
+  letter-spacing: -0.009em;
+}
+
+.t-display-md {
+  font-size: clamp(24px, 2.5vw, 34px);
+  font-weight: 600;
+  line-height: 1.47;
+  letter-spacing: -0.011em;
+}
+
+.t-lead {
+  font-size: clamp(21px, 2vw, 28px);
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.007em;
+}
+
+.t-tagline {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.19;
+  letter-spacing: 0.011em;
+}
+
+/* Apple body — 17px NOT 16px, letter-spacing -0.374px */
+.t-body {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.47;
+  letter-spacing: -0.022em;
+}
+
+.t-body-strong {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.24;
+  letter-spacing: -0.022em;
+}
+
+/* Dense link — used in footer columns */
+.t-dense-link {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 2.41;
+  letter-spacing: 0;
+}
+
+.t-caption {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: -0.013em;
+}
+
+.t-caption-strong {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.013em;
+}
+
+.t-nav {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.007em;
+}
+
+.t-fine {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.007em;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Apple Button System
+───────────────────────────────────────────────────────────────*/
+
+/* Primary — blue pill */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #0066cc;
+  color: #ffffff;
+  border-radius: 9999px;
+  padding: 11px 22px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.47;
+  letter-spacing: -0.022em;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-primary:hover { background: #0071e3; }
+.btn-primary:active { transform: scale(0.95); }
+
+/* Secondary — ghost pill */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  color: #0066cc;
+  border-radius: 9999px;
+  padding: 11px 22px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.47;
+  letter-spacing: -0.022em;
+  border: 1px solid #0066cc;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-secondary:hover { background: rgba(0,102,204,0.06); }
+.btn-secondary:active { transform: scale(0.95); }
+
+/* On-dark versions */
+.btn-primary-dark {
+  @apply btn-primary;
+}
+.btn-secondary-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  color: #2997ff;
+  border-radius: 9999px;
+  padding: 11px 22px;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  border: 1px solid #2997ff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-secondary-dark:hover { background: rgba(41,151,255,0.1); }
+.btn-secondary-dark:active { transform: scale(0.95); }
+
+/* ─────────────────────────────────────────────────────────────
+   Apple Tile System — alternating light/dark canvases
+   No dividers between tiles — the background IS the divider.
+───────────────────────────────────────────────────────────────*/
+.tile-light    { background: #ffffff; color: #1d1d1f; }
+.tile-parchment{ background: #f5f5f7; color: #1d1d1f; }
+.tile-dark     { background: #272729; color: #ffffff; }
+.tile-dark-2   { background: #2a2a2c; color: #ffffff; }
+.tile-dark-3   { background: #252527; color: #ffffff; }
+
+/* ─────────────────────────────────────────────────────────────
+   Apple text-link utilities
+───────────────────────────────────────────────────────────────*/
+.link-light { color: #0066cc; text-decoration: none; }
+.link-light:hover { text-decoration: underline; }
+.link-dark  { color: #2997ff; text-decoration: none; }
+.link-dark:hover { text-decoration: underline; }
+
+/* ─────────────────────────────────────────────────────────────
+   Ticker animation
+───────────────────────────────────────────────────────────────*/
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-ticker { animation: ticker 30s linear infinite; }
+
+/* ─────────────────────────────────────────────────────────────
+   Utility: Apple hairline card
+───────────────────────────────────────────────────────────────*/
+.apple-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 18px; /* rounded.lg */
+  padding: 24px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   ThemeContext — suppress automatic dark unless class applied
+   (Apple tiles manage their own dark/light canvases)
+───────────────────────────────────────────────────────────────*/
