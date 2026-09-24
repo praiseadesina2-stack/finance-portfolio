@@ -1,29 +1,39 @@
-# Omotola Sina Elijah — Portfolio
+# Omotola Sina Elijah — Professional Portfolio
 
-Premium, editorial-institutional personal portfolio built in React + TypeScript + Vite +
-Tailwind CSS, with Framer Motion for animation and Recharts for the illustrative market panel.
+Welcome to the source code for my personal portfolio. I am a Financial Analyst and Accounting Professional specializing in auditing, financial modeling, and cross-border payments.
 
-## Getting started
+This website was designed to reflect precision and professionalism, built with a modern, high-performance web stack.
+
+## Tech Stack
+
+- **Framework:** React + TypeScript + Vite
+- **Styling:** Tailwind CSS (custom design system)
+- **Animations:** Framer Motion
+- **Data Visualization:** Recharts
+
+## Local Development
+
+To run this project locally, clone the repository and run the following commands:
 
 ```bash
+# Install dependencies
 npm install
-npm run dev       # local dev server
-npm run build     # production build -> dist/
-npm run preview   # preview the production build
+
+# Start the local development server
+npm run dev
+
+# Build for production (outputs to /dist)
+npm run build
 ```
 
-## Editing content
+## Project Structure
 
-All copy — experience, education, certifications, skills, contact details — lives in a
-single file: `src/data/portfolio.ts`. Update it there; no component changes needed for
-text edits.
+- **Content & Data:** All site copy (experience, education, skills, contact info) is managed centrally in `src/data/portfolio.ts`.
+- **Styling:** Custom design tokens and utilities are configured in `tailwind.config.js` and `src/index.css`.
+- **Assets:** Static files, including images and my downloadable CV, are stored in the `public/` directory.
 
-## Notes
+## Contact
 
-- Drop your actual CV at `public/Omotola-Sina-Elijah-CV.pdf` — the "Download CV" buttons
-  already link to that path.
-- The market chart in the Analysis section is explicitly labeled as illustrative — it's a
-  design motif, not real financial data, and should stay that way unless you have real
-  data you want to visualize.
-- Only information present in the source profile is used anywhere on the site; no employer,
-  credential, or figure has been invented.
+Feel free to reach out to me for opportunities in Financial Analysis, Audit, or Advisory roles:
+- **Email:** oluwasinaayo309@gmail.com
+- **WhatsApp:** [+234 814 207 8768](https://wa.me/2348142078768)
