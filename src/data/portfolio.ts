@@ -3,23 +3,23 @@
 export const identity = {
   fullName: 'Omotola Sina Elijah',
   firstName: 'Omotola',
-  lastName:  'Sina Elijah',
-  monogram:  'OSE',
-  title:     'Financial Analyst & Accounting Professional',
-  email:     'oluwasinaayo309@gmail.com',
-  phones:    ['+234 814 207 8768', '+234 810 624 3939'],
-  location:  'Nigeria',
-  photo:     'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800&auto=format&fit=crop',
+  lastName: 'Sina Elijah',
+  monogram: 'OSE',
+  title: 'Financial Analyst & Accounting Professional',
+  email: 'oluwasinaayo309@gmail.com',
+  phones: ['+234 814 207 8768', '+234 810 624 3939'],
+  location: 'Nigeria',
+  photo: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800&auto=format&fit=crop',
 }
 
 export const heroContent = {
   statusLabel: 'AVAILABLE FOR HIRE',
-  tagline:     'Finance, Precision, Purpose.',
-  headline:    'Welcome to the Finance World.',
-  sub:         'I will be your guide.',
-  body:        'Accounting graduate. Audit-proven. Market-informed. Ready to generate immediate value for your team.',
-  cta:         'Hire Me',
-  cv:          'Download CV',
+  tagline: 'Finance, Precision, Purpose.',
+  headline: 'Welcome to the Finance World.',
+  sub: 'I will be your guide.',
+  body: 'Accounting graduate. Audit-proven. Market-informed. Ready to generate immediate value for your team.',
+  cta: 'Hire Me',
+  cv: 'Download CV',
 }
 
 export const stats = [
@@ -32,12 +32,12 @@ export const stats = [
 export const aboutContent = {
   eyebrow: 'ABOUT',
   heading: 'Strategic. Precise. Results-driven.',
-  body:    'Accounting graduate with hands-on audit, financial modelling, and compliance experience. I bring disciplined analysis and institutional integrity to every engagement.',
+  body: 'Accounting graduate with hands-on audit, financial modelling, and compliance experience. I bring disciplined analysis and institutional integrity to every engagement.',
   pillars: [
-    { title: 'Financial Modelling',    desc: '3-statement forecasts, DCF, scenario analysis.' },
-    { title: 'Audit & Assurance',      desc: 'Zero-variance ledger audits and bank reconciliations.' },
-    { title: 'Market Intelligence',    desc: 'FX, macro drivers, and risk-adjusted frameworks.' },
-    { title: 'Regulatory Compliance',  desc: 'IFRS standards, KYC, and statutory documentation.' },
+    { title: 'Financial Modelling', desc: '3-statement forecasts, DCF, scenario analysis.' },
+    { title: 'Audit & Assurance', desc: 'Zero-variance ledger audits and bank reconciliations.' },
+    { title: 'Market Intelligence', desc: 'FX, macro drivers, and risk-adjusted frameworks.' },
+    { title: 'Regulatory Compliance', desc: 'IFRS standards, KYC, and statutory documentation.' },
   ],
 }
 
@@ -49,10 +49,23 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    id: 'cross-border-payments',
+    id: 'audit-assistant',
     index: '01',
+    title: 'Audit Assistant',
+    org: 'Olusuyi Agbola & Co.',
+    location: 'Abuja',
+    bullets: [
+      'Conducted financial audits and verified records for multiple client accounts',
+      'Executed bank reconciliations with zero unreconciled variances',
+      'Structured Excel-based tax computation workflows',
+      'Maintained strict statutory ethics and client confidentiality',
+    ],
+  },
+  {
+    id: 'cross-border-payments',
+    index: '02',
     title: 'Cross-Border Payments Merchant',
-    org:   'Accrue Fintech',
+    org: 'Accrue Fintech',
     location: 'Remote',
     bullets: [
       'Supported cross-border payment operations and end-to-end transaction execution',
@@ -63,9 +76,9 @@ export const experiences: Experience[] = [
   },
   {
     id: 'crypto-p2p-merchant',
-    index: '02',
+    index: '03',
     title: 'Cryptocurrency P2P Merchant',
-    org:   'Binance, Bybit & Gate.io',
+    org: 'Binance, Bybit & Gate.io',
     location: 'Remote',
     bullets: [
       'Executed peer-to-peer cryptocurrency trades across multiple exchange ecosystem protocols',
@@ -76,23 +89,10 @@ export const experiences: Experience[] = [
     note: 'Facilitated high-volume peer-to-peer cryptocurrency transactions across major digital asset exchanges.',
   },
   {
-    id: 'audit-assistant',
-    index: '03',
-    title: 'Audit Assistant',
-    org:   'Olusuyi Agbola & Co.',
-    location: 'Abuja',
-    bullets: [
-      'Conducted financial audits and verified records for multiple client accounts',
-      'Executed bank reconciliations with zero unreconciled variances',
-      'Structured Excel-based tax computation workflows',
-      'Maintained strict statutory ethics and client confidentiality',
-    ],
-  },
-  {
     id: 'kyc-officer',
     index: '04',
     title: 'KYC Verification Officer',
-    org:   'Pi Network (PI)',
+    org: 'Pi Network (PI)',
     location: 'Remote',
     bullets: [
       'Managed AML-compliant identity verification for new account onboarding',
@@ -106,9 +106,9 @@ export const experiences: Experience[] = [
 
 // Education — university degree only
 export const education = {
-  degree:      'Bachelor of Technology (B.Tech) — Accounting',
+  degree: 'Bachelor of Technology (B.Tech) — Accounting',
   institution: 'Ladoke Akintola University of Technology',
-  period:      '2018 — 2024',
+  period: '2018 — 2024',
   courses: [
     'Financial Management & Accounting',
     'Financial Statement Analysis',
@@ -119,29 +119,29 @@ export const education = {
 }
 
 export const credentials = [
-  { name: 'Financial Modelling',                      status: 'CERTIFIED'  as const },
-  { name: 'Customer Service & Relationship Management', status: 'CERTIFIED'  as const },
-  { name: 'Project Management',                        status: 'CERTIFIED'  as const },
-  { name: 'ICAN — Institute of Chartered Accountants', status: 'IN VIEW'    as const },
-  { name: 'Data Analyst Certification',                status: 'IN VIEW'    as const },
-  { name: 'Digital Marketing & Business Growth',       status: 'INFORMAL'   as const },
+  { name: 'Financial Modelling', status: 'CERTIFIED' as const },
+  { name: 'Customer Service & Relationship Management', status: 'CERTIFIED' as const },
+  { name: 'Project Management', status: 'CERTIFIED' as const },
+  { name: 'ICAN — Institute of Chartered Accountants', status: 'IN VIEW' as const },
+  { name: 'Data Analyst Certification', status: 'IN VIEW' as const },
+  { name: 'Digital Marketing & Business Growth', status: 'INFORMAL' as const },
 ]
 
 export type CredentialStatus = 'CERTIFIED' | 'IN VIEW' | 'INFORMAL'
 
 export const skills = [
-  { group: 'Analytical',   items: ['Analytical Thinking', 'Critical Thinking', 'Variance Analysis', 'Data Interpretation'] },
-  { group: 'Financial',    items: ['Financial Modelling', 'Financial Reporting', 'Auditing & Assurance', 'Tax Computation'] },
-  { group: 'Technical',    items: ['Microsoft Excel (Advanced)', 'Sage Accounting', 'Data Processing'] },
+  { group: 'Analytical', items: ['Analytical Thinking', 'Critical Thinking', 'Variance Analysis', 'Data Interpretation'] },
+  { group: 'Financial', items: ['Financial Modelling', 'Financial Reporting', 'Auditing & Assurance', 'Tax Computation'] },
+  { group: 'Technical', items: ['Microsoft Excel (Advanced)', 'Sage Accounting', 'Data Processing'] },
   { group: 'Professional', items: ['Executive Communication', 'Task Prioritisation', 'Team Collaboration', 'Confidentiality'] },
 ]
 
 export const practiceAreas = [
-  { label: 'Financial Modelling',   pct: 92 },
-  { label: 'Financial Reporting',   pct: 90 },
-  { label: 'Audit & Assurance',     pct: 80 },
-  { label: 'Market Research',       pct: 78 },
-  { label: 'Data Analysis',         pct: 70 },
+  { label: 'Financial Modelling', pct: 92 },
+  { label: 'Financial Reporting', pct: 90 },
+  { label: 'Audit & Assurance', pct: 80 },
+  { label: 'Market Research', pct: 78 },
+  { label: 'Data Analysis', pct: 70 },
 ]
 
 export const interests = [
@@ -152,12 +152,12 @@ export const interests = [
 ]
 
 export const navLinks = [
-  { label: 'About',         href: '#about' },
-  { label: 'Experience',    href: '#experience' },
-  { label: 'Analysis',      href: '#analysis' },
-  { label: 'Skills',        href: '#skills' },
-  { label: 'Education',     href: '#education' },
-  { label: 'Contact',       href: '#contact' },
+  { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Analysis', href: '#analysis' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Education', href: '#education' },
+  { label: 'Contact', href: '#contact' },
 ]
 
 export const tickerItems = [
