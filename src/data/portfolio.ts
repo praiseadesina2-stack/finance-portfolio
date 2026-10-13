@@ -20,6 +20,7 @@ export const heroContent = {
   body: 'Accounting graduate. Audit-proven. Market-informed. Ready to generate immediate value for your team.',
   cta: 'Hire Me',
   cv: 'Download CV',
+  cvUrl: '/OMOTOLA_SINA_ELIJAH.pdf',
 }
 
 export const stats = [

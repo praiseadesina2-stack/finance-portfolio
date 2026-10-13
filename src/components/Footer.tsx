@@ -69,7 +69,7 @@ export default function Footer() {
               Hire Me <ArrowUpRight size={13} />
             </a>
             <p className="t-caption mt-2" style={{ color: '#6e6e73' }}>{identity.location}</p>
-            <a href="/Omotola-Sina-Elijah-CV.pdf" download className="t-caption link-light block mt-2">
+            <a href="/OMOTOLA_SINA_ELIJAH.pdf" download="OMOTOLA_SINA_ELIJAH.pdf" className="t-caption link-light block mt-2">
               Download CV →
             </a>
           </div>

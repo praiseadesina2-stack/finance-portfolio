@@ -59,7 +59,7 @@ export default function Hero() {
               <button onClick={() => setModalOpen(true)} className="btn-primary">
                 {heroContent.cta} <ArrowUpRight size={14} />
               </button>
-              <a href="/Omotola-Sina-Elijah-CV.pdf" download className="btn-secondary">
+              <a href={heroContent.cvUrl || '/OMOTOLA_SINA_ELIJAH.pdf'} download="OMOTOLA_SINA_ELIJAH.pdf" className="btn-secondary">
                 <FileText size={14} /> {heroContent.cv}
               </a>
             </motion.div>
@@ -200,7 +200,7 @@ export default function Hero() {
                 <a href="#contact" onClick={() => setModalOpen(false)} className="t-caption link-light">
                   Full contact form →
                 </a>
-                <a href="/Omotola-Sina-Elijah-CV.pdf" download className="btn-primary" style={{ padding: '8px 18px', fontSize: 14 }}>
+                <a href={heroContent.cvUrl || '/OMOTOLA_SINA_ELIJAH.pdf'} download="OMOTOLA_SINA_ELIJAH.pdf" className="btn-primary" style={{ padding: '8px 18px', fontSize: 14 }}>
                   <FileText size={13} /> CV
                 </a>
               </div>

@@ -51,8 +51,8 @@ export default function Navbar() {
         {/* Right: CV link */}
         <div className="hidden md:flex items-center">
           <a
-            href="/Omotola-Sina-Elijah-CV.pdf"
-            download
+            href="/OMOTOLA_SINA_ELIJAH.pdf"
+            download="OMOTOLA_SINA_ELIJAH.pdf"
             className="t-nav text-apple-blue-dark hover:underline flex items-center gap-1"
             style={{ color: '#2997ff' }}
           >
@@ -90,7 +90,7 @@ export default function Navbar() {
                 </li>
               ))}
               <li className="pt-3 border-t border-white/10">
-                <a href="/Omotola-Sina-Elijah-CV.pdf" download className="t-body flex items-center gap-1.5" style={{ color: '#2997ff' }}>
+                <a href="/OMOTOLA_SINA_ELIJAH.pdf" download="OMOTOLA_SINA_ELIJAH.pdf" className="t-body flex items-center gap-1.5" style={{ color: '#2997ff' }}>
                   Download CV <ArrowUpRight size={13} />
                 </a>
               </li>
