@@ -74,7 +74,7 @@ export default function Hero() {
           >
             <div className="relative w-full max-w-[360px] xl:max-w-[400px]">
               <img
-                src="/shina.png"
+                src="/SAVE_20261018_175139.jpg.jpeg"
                 alt="Finance professionals reviewing documents"
                 draggable={false}
                 className="w-full object-cover object-center select-none"
